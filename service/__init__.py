@@ -1,3 +1,3 @@
-from movie import MovieRecomender
+from .movie import MovieRecomender
 
 __all__ = ['movie']

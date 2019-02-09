@@ -6,3 +6,7 @@ __pycache__
 
 # vscode
 .vscode/
+
+# Models csv & joblib
+*.joblib
+*.csv

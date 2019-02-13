@@ -9,9 +9,9 @@ class DataManager(object):
     pass
 
     @staticmethod
-    def get_csv(file_name):
+    def get_csv(file_name, index=None):
         full_path = FILE_PATH + file_name + '.csv'
-        return pd.read_csv(full_path)
+        return pd.read_csv(filepath_or_buffer=full_path, index_col=index)
 
     @staticmethod
     def get_model(file_name):

@@ -7,7 +7,14 @@ class Movie(Resource):
         self.service = mr()
 
     def get(self, title):
-        recomendations = self.service.predict(title)
-        print('get Method')
-        print(recomendations)
-        return {'recomendations': recomendations}
+        holder = 'The Grandfather'
+        if not holder == title:    
+            '''recomendations = self.service.predict(title)
+            print('get Method')
+            print(recomendations)'''
+            task_id = 0    
+            return {'taskId': task_id}
+        else:
+            # check prediction
+            # task_id = task_id
+            return {'prediction': 'predicted'}
